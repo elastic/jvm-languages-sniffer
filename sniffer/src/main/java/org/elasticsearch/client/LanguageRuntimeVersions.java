@@ -24,7 +24,7 @@ import java.lang.reflect.Method;
 
 // Copied verbatim from https://github.com/elastic/jvm-languages-sniffer
 
-public class LanguageRuntimeVersions {
+class LanguageRuntimeVersions {
 
     /**
      * Returns runtime information by looking up classes identifying non-Java JVM
