@@ -89,7 +89,7 @@ class LanguageRuntimeVersions {
         return keepMajorMinor(getStaticField("org.jruby.runtime.Constants", "VERSION"));
     }
 
-    static private String getStaticField(String className, String fieldName) {
+    private static String getStaticField(String className, String fieldName) {
         Class<?> clazz;
         try {
             clazz = Class.forName(className);
@@ -105,7 +105,7 @@ class LanguageRuntimeVersions {
         }
     }
 
-    static private String callStaticMethod(String className, String methodName) {
+    private static String callStaticMethod(String className, String methodName) {
         Class<?> clazz;
         try {
             clazz = Class.forName(className);
